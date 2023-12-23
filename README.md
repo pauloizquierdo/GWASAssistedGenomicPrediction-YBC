@@ -1,8 +1,6 @@
-# GWASAssistedGenomicPrediction-YBC
+# Genome-wide association and genomic prediction for Fe and Zn concentration and Fe bioavailability in a yellow bean collection of dry beans
 
-Genome-wide association and genomic prediction for Fe and Zn concentration and Fe bioavailability in a yellow bean collection of dry beans
-
-Abstract
+## Abstract
 Dry bean is a nutrient-dense food targeted in biofortification programs to increase seed iron and zinc levels. 
 The underlying assumption of breeding for higher mineral content is that enhanced iron and zinc levels will 
 deliver health benefits to the consumers of these biofortified foods. This study characterized a diversity 
