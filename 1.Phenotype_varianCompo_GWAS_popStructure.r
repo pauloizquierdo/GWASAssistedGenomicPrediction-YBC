@@ -556,3 +556,157 @@ ggplot(pheno_tidy,
       axis.text.x = element_text(angle = 45, 
              hjust = 1)) +
     scale_fill_manual(values = my_colors)
+
+###============== Seed Color vs minerals
+
+# Data
+# Seed color data was obtained from Sadohara et al., 2021 (https://doi.org/10.1002/tpg2.20173). 
+# Cooking time, population structure, and country of origin information were sourced from Sadohara et al., 2022."
+
+YBC_color <- read_csv("YBC_phenotype_Color_CT.csv")
+commoncol <- sort(table(YBC_color$Seed_type), decreasing = TRUE)
+
+
+# chose the 9 most common seed colors
+YBC_color <- YBC_color %>% filter(Seed_type %in% names(commoncol[1:10]))
+
+YBC_color$Seed_type =  factor(YBC_color$Seed_type,
+                      levels = c("Beige and brown stripes",
+                                 "Amarillo (dk)", "Canary",
+                                 "Green-yellow", "Manteca",
+                                 "Mayocoba", "Brown",
+                                 "Beige","Amarillo (lt)",
+                                 "White"))
+
+# Seed type vs FeBio MI2018
+ggplot(YBC_color, aes(x = reorder(Seed_type,FeBio_MI18,
+                              na.rm=TRUE), 
+                  y = FeBio_MI18, 
+                  fill = Seed_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylab("FeBio - MI 2018 (% of control)") +
+  xlab(NULL) +
+  ylim(c(10,135)) +
+  theme(axis.ticks = element_blank(),
+          axis.text.x = element_text(angle = 20, 
+                                      hjust = 1)) +
+  scale_fill_manual(values = c('beige',
+                              'darkorange2', 
+                              'gold',
+                              'lavenderblush3',
+                              'khaki1', 'yellow',
+                              'darkgoldenrod4',
+                              'burlywood1',
+                              'lightgoldenrod',
+                              'white'))
+
+# Seed type vs FeBio MI2019
+ggplot(YBC_color, aes(x = reorder(Seed_type,FeBio_MI19,
+                              na.rm=TRUE), 
+                  y = FeBio_MI19, 
+                  fill = Seed_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylab("FeBio - MI 2019 (% of control)") +
+  xlab(NULL) +
+  ylim(c(10,135)) +
+  theme(axis.ticks = element_blank(),
+          axis.text.x = element_text(angle = 20, 
+                                      hjust = 1)) +
+  scale_fill_manual(values = c('beige',
+                              'darkorange2', 
+                              'gold',
+                              'lavenderblush3',
+                              'khaki1', 'yellow',
+                              'darkgoldenrod4',
+                              'burlywood1',
+                              'lightgoldenrod',
+                              'white'))
+
+# Seed type vs Fe MI2018
+
+ggplot(YBC_color, aes(x = reorder(Seed_type,Fe_MI18,
+                              na.rm=TRUE), 
+                  y = Fe_MI18, 
+                  fill = Seed_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylab("Fe - MI 2018 (µg/g)") +
+  xlab(NULL) +
+  ylim(c(40,120)) +
+  theme(axis.ticks = element_blank(),
+          axis.text.x = element_text(angle = 20, 
+                                      hjust = 1)) +
+  scale_fill_manual(values = c('beige',
+                              'darkorange2', 
+                              'gold',
+                              'lavenderblush3',
+                              'khaki1', 'yellow',
+                              'darkgoldenrod4',
+                              'burlywood1',
+                              'lightgoldenrod',
+                              'white'))
+
+# Seed type vs Fe MI2019
+
+ggplot(YBC_color, aes(x = reorder(Seed_type,Fe_MI19,
+                              na.rm=TRUE), 
+                  y = Fe_MI19, 
+                  fill = Seed_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylab("Fe - MI 2019 (µg/g)") +
+  xlab(NULL) +
+  ylim(c(40,120)) +
+  theme(axis.ticks = element_blank(),
+          axis.text.x = element_text(angle = 20, 
+                                      hjust = 1)) +
+  scale_fill_manual(values = c('beige',
+                              'darkorange2', 
+                              'gold',
+                              'lavenderblush3',
+                              'khaki1', 'yellow',
+                              'darkgoldenrod4',
+                              'burlywood1',
+                              'lightgoldenrod',
+                              'white'))
+
+# Seed type vs Zn MI2018
+
+ggplot(YBC_color, aes(x = reorder(Seed_type,Zn_MI18,
+                              na.rm=TRUE), 
+                  y = Zn_MI18, 
+                  fill = Seed_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylab("Zn - MI 2018 (µg/g)") +
+  xlab(NULL) +
+  theme(axis.ticks = element_blank(),
+          axis.text.x = element_text(angle = 20, 
+                                      hjust = 1)) +
+  scale_fill_manual(values = c('beige',
+                              'darkorange2', 
+                              'gold',
+                              'lavenderblush3',
+                              'khaki1', 'yellow',
+                              'darkgoldenrod4',
+                              'burlywood1',
+                              'lightgoldenrod',
+                              'white'))
+
+# Seed type vs Zn MI2019
+ggplot(YBC_color, aes(x = reorder(Seed_type,Zn_MI19,
+                              na.rm=TRUE), 
+                  y = Zn_MI19, 
+                  fill = Seed_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylab("Zn - MI 2019 (µg/g)") +
+  xlab(NULL) +
+  theme(axis.ticks = element_blank(),
+          axis.text.x = element_text(angle = 20, 
+                                      hjust = 1)) +
+  scale_fill_manual(values = c('beige',
+                              'darkorange2', 
+                              'gold',
+                              'lavenderblush3',
+                              'khaki1', 'yellow',
+                              'darkgoldenrod4',
+                              'burlywood1',
+                              'lightgoldenrod',
+                              'white'))
