@@ -15,3 +15,10 @@ identified through GWAS, was used as a fixed effect for FeBio. This study provid
 FeBio estimated in vitro and Fe concentration and highlights the potential of GP in accurately predicting FeBio in yellow beans, 
 offering a cost-effective alternative to the traditional assessment of using Caco2 cell methodologies.
 
+## Organization of this repository
+### Scripts:
+1. R script for analyzing correlations, generating figures, conducting variance component analysis, performing GWAS, PCA, and kinship, and evaluating phenotypes of families and seed color.
+2. R script for running SSI and RKHS models on the training dataset for Yield, Fe, and Zn in MI and NE for the years 2018-2019.
+3. R script for running SSI and RKHS models with QTN information to the training dataset for FeBio in MI over 2018-2019.
+4. R script for running SSI and RKHS models on the prediction set utilizing the entire YBC.
+5. R script for running SSI and RKHS models on the prediction set using the Andean accessions from the YBC.
