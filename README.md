@@ -22,3 +22,8 @@ offering a cost-effective alternative to the traditional assessment of using Cac
 3. R script for running SSI and RKHS models with QTN information to the training dataset for FeBio in MI over 2018-2019.
 4. R script for running SSI and RKHS models on the prediction set utilizing the entire YBC.
 5. R script for running SSI and RKHS models on the prediction set using the Andean accessions from the YBC.
+
+### Data:
+
+- YBC_GWASAssistedGP.RData: R List containing the Phenotype, Genotype, Hapmap, and SNPs positions.
+- YBC_phenotype_Color_CT.csv: CSV file containing agronomic, mineral traits collected in this study, and cooking time, seed type, population structure, and gene pool information collected by Sadohara et al., 2021 (https://doi.org/10.1002/tpg2.20173). 
