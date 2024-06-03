@@ -15,6 +15,8 @@ identified through GWAS, was used as a fixed effect for FeBio. This study provid
 FeBio estimated in vitro and Fe concentration and highlights the potential of GP in accurately predicting FeBio in yellow beans, 
 offering a cost-effective alternative to the traditional assessment of using Caco2 cell methodologies.
 
+https://doi.org/10.3389/fgene.2024.1330361 
+
 ## Organization of this repository
 ### Scripts:
 1. R script for analyzing correlations, generating figures, conducting variance component analysis, performing GWAS, PCA, and kinship, and evaluating phenotypes of families and seed color.
