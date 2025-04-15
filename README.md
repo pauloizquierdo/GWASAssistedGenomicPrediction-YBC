@@ -1,6 +1,6 @@
 # Genome-Wide Association and Genomic Prediction in Yellow Bean Collection (YBC)
 
-This repository accompanies the publication:  
+This repository contains code and data for the publication:
 **"Genome-wide association and genomic prediction for Fe and Zn concentration and Fe bioavailability in a yellow bean collection of dry beans"**  
 🔗 [Frontiers in Genetics, DOI: 10.3389/fgene.2024.1330361](https://doi.org/10.3389/fgene.2024.1330361)
 
